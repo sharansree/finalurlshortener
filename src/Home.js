@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import {db} from "./firebase";
 import {v4 as uuidv4} from 'uuid';
 import "./Home.css";
+import { IconButton } from '@material-ui/core';
+import { Send } from '@material-ui/icons';
 
 function Home()
 {
@@ -19,9 +21,16 @@ function Home()
 
     return(
         <div>
+          <div className = "home_center">
+            <h1>URL Shortener</h1>
+          </div>
            <form onSubmit={handleFormSubmit}>
+            <div className = "home_inputContainer">
             <input type="text" value={url} onChange={(e => setUrl(e.target.value))} placeHolder="Enter the url here" />
-            <input type="submit" value="shorten url" />
+            <IconButton type = "submit">
+                <Send />
+            </IconButton>
+            </div>
            </form>
         </div>
     );

@@ -1,0 +1,26 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.home_inputContainer{
+    border: 1px solid #000000;
+    display: flex;
+    border-radius: 9999px;
+    box-shadow: 1px 1px 3px black;
+}
+
+.home_inputContainer > input{
+    width: 300px;
+    border: none;
+    margin-left: 20px;
+    outLine: none;
+    font-size: 20px;
+}
+
+.home_center{
+    text-align: center;
+    margin-bottom: 25px;
+}
